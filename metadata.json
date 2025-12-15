@@ -1,0 +1,5 @@
+{
+  "name": "EcoWorld Auxiliary Police Master Roster",
+  "description": "A comprehensive monthly manpower roster generator for Police Bantuan EcoWorld, featuring automated shift balancing, overtime calculation, and strict manpower compliance.",
+  "requestFramePermissions": []
+}
