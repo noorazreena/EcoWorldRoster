@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { Printer, Calendar, UserMinus, Clock, Ban, ArrowRightCircle, FileText, LayoutGrid, CheckCircle, ChevronLeft, ChevronRight, Download, BarChart2, Trash2, RefreshCcw, Edit3, Lock, Unlock, ShieldCheck, Users, CalendarDays, BookOpen } from 'lucide-react';
+import { Printer, Calendar, UserMinus, Clock, Ban, ArrowRightCircle, FileText, LayoutGrid, CheckCircle, ChevronLeft, ChevronRight, Download, BarChart2, Trash2, RefreshCcw, Edit3, Lock, Unlock, ShieldCheck, Users, CalendarDays, BookOpen, RefreshCw } from 'lucide-react';
 import { RosterTable } from './components/RosterTable';
 import { DailyRoster } from './components/DailyRoster';
 import { generateRoster, calculateDailyStrength } from './services/rosterGenerator';
@@ -427,6 +427,7 @@ function App() {
                </>
              )}
              <button onClick={handlePrint} className="flex items-center space-x-2 bg-white text-gray-900 px-4 py-2 rounded shadow hover:bg-gray-100 transition-colors font-bold text-xs"><Printer className="w-4 h-4" /><span>PRINT</span></button>
+             <button onClick={() => window.location.reload()} className="flex items-center space-x-2 bg-teal-600 text-white px-3 py-2 rounded shadow hover:bg-teal-500 transition-colors font-bold text-xs"><RefreshCw className="w-4 h-4" /><span>REFRESH</span></button>
           </div>
       </div>
 
